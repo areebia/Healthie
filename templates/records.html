@@ -1,0 +1,25 @@
+{% extends "content.html" %}
+{% block content %}
+	<div class="record-dropper" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+		<h1>Records</h1>
+		<table class="record-table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Date</th>
+					<th>Author</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+				{% for record in record_list %}
+				<tr>
+					<td>{{ record.filename }}</td>
+					<td>{{ record.upload_date.strftime('%-m/%-d/%Y') }}</td>
+					<td>{{ record.uploaded_by }}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+{% endblock %}

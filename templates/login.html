@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="w3-container w3-third"></div>
+	<div id="AuthBox" class="w3-container w3-third">
+		<h1>Login</h1>
+		<form class="LoginForm" method="post">
+			<div class="w3-row-padding">
+			<!-- <div class="FieldLabel">Login</div> -->
+			<!-- <div>Username</div> -->
+				<input class="w3-col" type="text" name="username" placeholder="Username" onkeyup="authUser(this)" onkeydown="authUser(this)" />
+			</div>
+			<!-- <div>Password</div> -->
+			<div class="w3-row-padding">
+				<input class="w3-col" type="password" name="password" placeholder="Password" onkeyup="authUser(this)" onkeydown="authUser(this)" />
+			</div>
+			<br/>
+			<input class="w3-round-small" type="submit" name="login" value="Login"/>
+		</form>
+	</div>
+<div class="w3-container w3-third"></div>
+{% endblock %}

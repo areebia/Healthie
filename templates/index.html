@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block body %}
+	<div style="margin-top:20px">
+		<img src="\static\healthie-us_splash.png" alt="healthie.us" style="position: absolute; width:50%; left:25%; z-index:-2;">
+		<a href="login"><img src="\static\healthie-us_btn_login.png" alt="Log in" style="position: absolute; width:10%; left:29%; margin-top:18%; z-index:-1;"></a>
+		<a href="register"><img src="\static\healthie-us_btn_register.png" alt="Register" style="position: absolute; width:10%; left:42%; margin-top:18%; z-index:-1;"></a>
+	</div>
+	<div style="margin-top:30%; position: absolute; width:50%; left:25%; font-family:'verdana'; color:#429EA6;">
+		<div class="w3-row">
+			<div class="w3-rest">
+				<h2 style="font-family:'verdana'; font-weight:bold; font-style:italic; color:#429EA6;">"The GitHub of Health"</h2>
+				<p style="font-family:'verdana'; color:#429EA6;">A modernized, centralized medical record and communication system, for a modern age.</p>
+			</div>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col" style="width:66%">
+				<div class="w3-row">
+					<p>Powered by:</p>
+				</div>
+				<div class="w3-row">
+					<div class="w3-col" style="width:50%">
+						<img src="\static\network-agora-io.svg" alt="agora.io" style="max-width:120px">
+					</div>
+					<div class="w3-col" style="width:50%">
+						<img src="\static\network-trulioo.png" alt="Trulioo" style="max-width:100px">
+					</div>
+				</div>
+			</div>
+			<div class="w3-col" style="width:33%">
+				<!--<div class="w3-row">
+					<p>Integration with:</p>
+				</div>
+				<div class="w3-row">
+					<div class="w3-col" style="width:100%">
+						<img src="\static\network-fitbit.svg" alt="Fitbit" style="max-width:120px">
+					</div>
+				</div>-->
+			</div>
+		</div>
+	</div>
+	</div>
+{% endblock %}
